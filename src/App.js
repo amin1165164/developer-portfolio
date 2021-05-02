@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import Particles from "react-particles-js";
 import Navbar from "./Components/Navbar/Navbar";
 import Header from "./Components/Header/Header";
 import About from "./Components/About/About";
@@ -11,16 +12,36 @@ import Footer from "./Components/Footer/Footer";
 
 function App() {
   return (
-    <div>
+    <>
+      <Particles
+        params={{
+          particles:{
+            number:{
+              value: 30,
+              density:{
+                enable: true,
+                value_area: 900
+              }
+            },
+            shape:{
+              type:"square",
+              stroke:{
+                width: 6,
+                color: "#f89335f1"
+              }
+            }
+          }
+        }}
+      />
       <Navbar />
       <Header />
-      <About/>
-      <Projects/>
-      <Resume/>
-      <Blog/>
-      <Contact/>
-      <Footer/>
-    </div>
+      <About />
+      <Projects />
+      <Resume />
+      <Blog />
+      <Contact />
+      <Footer />
+    </>
   );
 }
 

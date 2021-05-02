@@ -1,0 +1,49 @@
+.header-wrapper {
+  position: relative;
+  background: url(../Images/white-notebook-black-data-firewall.jpg) no-repeat;
+  opacity: 0.8;
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+  /* z-index: 1; */
+}
+.info > h1 {
+    background: -webkit-linear-gradient(#ffee00, rgb(238, 10, 10));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.info {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 1.5;
+}
+.btn-resume{
+    border: 1px solid #f89335f1;
+    padding: 10px;
+    border-radius:5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 500;
+}
+.btn-resume:hover{
+    background: -webkit-linear-gradient(#ffee00, rgb(238, 10, 10));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+    background-position: 100% 0;
+    /* moz-transition: all .4s ease-in-out; */
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    
+}
+

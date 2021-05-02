@@ -1,14 +1,21 @@
 import React from "react";
 import { Link, animateScroll as scroll } from "react-scroll";
-import "./Navbar.css"
+import logo from "../Images/image-removebg-preview.png";
+import "./Navbar.css";
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-dark">
-      <div className="container-fluid">
-        <a className="navbar-brand ms-3" href="/">
-          MD AMINUL ISLAM
+    <nav className="navbar navbar-expand-lg navbar-light bg-dark sticky-top">
+      <div className="container-fluid container">
+        <a className="navbar-brand d-flex align-items-center" href="/">
+          <img
+            className="img-fluid"
+            src={logo}
+            alt=""
+            style={{ height: "4.375rem" }}
+          />
         </a>
+
         <button
           className="navbar-toggler"
           type="button"
@@ -25,23 +32,11 @@ const Navbar = () => {
             <li className="nav-item">
               <Link
                 activeClass="active"
-                to="header"
-                spy={true}
-                smooth={true}
-                offset={0}
-                duration={500}
-              >
-                Header{" "}
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link
-                activeClass="active"
                 to="about"
                 spy={true}
                 smooth={true}
-                offset={0}
-                duration={5000}
+                offset={-110}
+                duration={500}
               >
                 About{" "}
               </Link>
@@ -52,7 +47,7 @@ const Navbar = () => {
                 to="project"
                 spy={true}
                 smooth={true}
-                offset={0}
+                offset={-100}
                 duration={500}
               >
                 Projects{" "}

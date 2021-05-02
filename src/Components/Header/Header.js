@@ -1,63 +1,39 @@
 import React from "react";
-import image from "../Images/IMG_20200116_164220-01-removebg-preview.png"
-import {
-  FaFacebookF,
-  FaTwitter,
-  FaPinterest,
-  FaInstagram,
-  FaPlay,
-} from "react-icons/fa";
+import Typed from "react-typed";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faDownload } from "@fortawesome/free-solid-svg-icons";
+import "./Header.css";
 
 const Header = () => {
-  const [state] = React.useState({
-    title: "MD AMINUL ISLAM",
-    text:
-      "i,m Jonathan, professional web developer with long time \
-        experience in this field​",
-  });
   return (
-    <header id="header">
+    <div className="header-wrapper">
       <div className="container">
-        <div className="row">
-          <div className="col-6">
-            <div className="header__content">
-              <div className="header__section">
-                <ul className="header__ul">
-                  <li>
-                    <FaFacebookF className="headerIcon" />
-                  </li>
-                  <li>
-                    <FaTwitter className="headerIcon" />
-                  </li>
-                  <li>
-                    <FaPinterest className="headerIcon" />
-                  </li>
-                  <li>
-                    <FaInstagram className="headerIcon" />
-                  </li>
-                </ul>
-                <h1>{state.title}</h1>
-                <p>{state.text}</p>
-                <div className="header__buttons">
-                  <a href="" className="btn btn-outline">
-                    My Portfolio
-                  </a>
-                  &nbsp;&nbsp;&nbsp;
-                  <a href="" className="btn btn-smart">
-                    <FaPlay className="play" />
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="col-6">
-            <div className="banner__img">
-              <img className = "img-fluid" src={image} alt="man" />
-            </div>
-          </div>
+        <div className="info">
+          <h1>I AM AMINUL ISLAM</h1>
+          <h1>
+            <Typed
+              className="typed-text"
+              strings={[
+                " Web Developer",
+                " Frontend Developer",
+                " Web Designer",
+              ]}
+              typeSpeed={50}
+              backSpeed={60}
+              loop
+            />
+          </h1>
+          <a
+            href="https://drive.google.com/uc?export=download&id=1QvXiJ1Uz0mUa0NqVqSICSifOBM2tst5P"
+            className="btn-resume"
+            role="button"
+          >
+            {" "}
+            <FontAwesomeIcon icon={faDownload} /> Download Resume
+          </a>
         </div>
       </div>
-    </header>
+    </div>
   );
 };
 
