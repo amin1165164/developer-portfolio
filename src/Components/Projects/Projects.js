@@ -2,7 +2,7 @@ import React from "react";
 
 const Projects = () => {
   return (
-    <main style={{height: "500px"}} id="project">
+    <main id="project">
       Project section
     </main>
   );
