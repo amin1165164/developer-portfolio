@@ -29,7 +29,7 @@ const Header = () => {
             role="button"
           >
             {" "}
-            <FontAwesomeIcon icon={faDownload} /> Download Resume
+            <FontAwesomeIcon icon={faDownload}/> Download Resume
           </a>
         </div>
       </div>

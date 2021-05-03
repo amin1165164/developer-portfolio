@@ -18,10 +18,10 @@
   width: 150px;
   margin: 10px auto;
 }
-.mainContent {
+/* .mainContent {
   font-size: 16px;
   color: #dfdfdf;
-}
+} */
 
 .about__info {
   margin-top: 35px;
@@ -29,6 +29,10 @@
 }
 .about__info h1 {
   margin-bottom: 20px;
+}
+.wave-image {
+  height: 30px;
+  width: 25px;
 }
 .about__info-p1 {
   font-size: 18px;

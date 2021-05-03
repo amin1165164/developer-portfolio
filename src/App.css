@@ -11,3 +11,12 @@
   width: 100vw;
   z-index: -1;
 }
+.footer {
+  background: #3a3a3a;
+  height: 80px;
+  display: flex;
+  flex: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff
+}

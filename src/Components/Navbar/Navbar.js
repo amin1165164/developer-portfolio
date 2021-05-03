@@ -56,7 +56,7 @@ const Navbar = () => {
             <li className="nav-item">
               <Link
                 activeClass="active"
-                to="project"
+                to="blogs"
                 spy={true}
                 smooth={true}
                 offset={0}
@@ -68,7 +68,7 @@ const Navbar = () => {
             <li className="nav-item">
               <Link
                 activeClass="active"
-                to="project"
+                to="resume"
                 spy={true}
                 smooth={true}
                 offset={0}
@@ -80,10 +80,10 @@ const Navbar = () => {
             <li className="nav-item">
               <Link
                 activeClass="active"
-                to="project"
+                to="contactMe"
                 spy={true}
                 smooth={true}
-                offset={0}
+                offset={-100}
                 duration={500}
               >
                 Contact{" "}

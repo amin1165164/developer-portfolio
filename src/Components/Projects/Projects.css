@@ -1,0 +1,18 @@
+.project {
+  width: 100%;
+  background: #3a3a3a;
+  padding: 50px 0;
+}
+.main-header {
+  font-size: 32px;
+  color: #fff;
+}
+.commonBorder {
+  background: -webkit-linear-gradient(#ffee00, rgb(238, 10, 10));
+  -webkit-background-clip: fill;
+  -webkit-text-fill-color: transparent;
+  height: 3px;
+  width: 150px;
+  margin: 10px auto;
+  
+}
